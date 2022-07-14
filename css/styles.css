@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0; }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit; 
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family:'Bai Jamjuree' sans-serif;
+    color: #6D5D4B;
+    font-weight: 600;
+    line-height: 1.6;
+    background-color: cyan;
+    
+ }
+ .container{
+    width: 90rem;
+    margin: 10rem auto;
+    overflow: hidden;
+    box-shadow: 0 2rem 5rem rgba(0,0,0 ,.2);
+    background-color: white;
+
+ }
+ .header{
+    
+     background-image: linear-gradient(to right bottom,rgba(255,255,255, 0.63),
+      rgba(255,255,255, 0.03)), url(../images/bg-header-desktop.png);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 2rem;
+    }
+    .header__logo{
+        width: 4.5rem;
+        
+    }
+  .heading-1{
+      font-family: inherit;
+      font-weight: inherit;
+      font-size: 2.5rem;
+  }
+  .download-btn{
+      border: none;
+      border-radius: 200px;
+      color: white;
+      padding: 1.5rem;  
+  }
+  .download-btn--green{
+      background-color: #26BBA4;
+  }
+ .download-btn--blue{
+    background-color:rgb(97, 115, 255);
+    margin: 1.5rem;
+}
+.content--1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+    }
+.mac{
+    width: 50%;
+    margin-right: 9rem;
+    margin-left: -2rem;
+}
+.grid{
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    font-size: 1.5rem;
+    color:grey;
+    font-weight: 300;
+}
+.text--2{
+    text-align: center;
+    margin:4rem 9rem;
+}
+.content--2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem;
+}
+.device{
+    width: 70%;
+}
+.content--3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.clipboard-advice{
+    flex-basis: 25%;
+    position:relative;
+}
+.svg{
+    margin-left: 25%;
+}
+.icons{
+display: flex;
+justify-content: space-between;
+margin: 10rem 3rem;
+}
+.footer{
+    margin-top: 10rem;
+    background-color: rgba(128, 128, 128, .3);
+    padding: 2rem 3rem;
+}
+.footer__list{
+    display: flex;
+    flex-basis: 70%;
+    justify-content: space-between;
+    align-items:center;
+    list-style: none;
+}
+.list__link{
+    text-decoration: none;
+    color: rgba(0,0,0, .4);
+    font-size: 1.3rem;
+}
+.logo{
+    width: 4.5rem;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__social{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 2rem;
+    flex-grow: 1;
+    list-style: none;
+    align-items: center;
+}
+@media only screen and (max-width:56.25em){
+    .container{
+        margin: 0;
+    }
+        
+}
+@media only screen and (max-width:34.8em){
+    html{
+        font-size: 55%;
+    }
+    .btn{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .grid{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .flex-text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 4rem;
+    }
+    .heading-2{
+        margin-bottom: 2rem;
+    }
+    .content--3{
+        flex-direction: column;
+        
+
+    }
+    .clipboard-advice{
+        flex-basis: 0;
+    }
+    .device{
+        width: 100vw;
+    }
+    
+    
+    .icons{
+        padding: 5rem;
+        flex-direction: column;
+        
+        align-items: center;
+    }
+    .logos{
+        width: 25%;
+        padding: 5rem;
+    }
+        
+}
